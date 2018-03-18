@@ -1,0 +1,62 @@
+@charset "utf-8";
+*{
+  margin: 0;
+  padding: 0;
+  // 移动端开发 box-sizing
+  box-sizing: border-box;   
+}
+ul,ol{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+// 取出img 底部的基线 
+img{
+  display: block;
+}
+
+// 快速浮动
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix::before,
+.clearfix::after,{
+  content: '';
+  display: block;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+  clear: both;
+}
+// 移动端可以不写
+// .clearfix{
+//   zoom: 1;
+// }
+
+/*
+  移动web开发,虽然浏览器的 内核 都是 webkit
+  但是不同的浏览器开发厂商 ,可能会为浏览器添加一些 特殊的 独有样式
+  为了清除不同浏览器带来的显示差异 我们有一个 比较通用的样式 normalize.css
+*/ 
+
+// 添加边框的 通用类
+.bdt{
+  border-top: 1px solid gray;
+}
+.bdl{
+  border-left: 1px solid gray;
+}
+.bdr{
+  border-right: 1px solid gray;
+}
+.bdb{
+  border-bottom: 1px solid gray;
+}
+// 单独设置边框颜色为白色
+.bdcW{
+   border-color: white;
+}

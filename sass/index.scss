@@ -1,0 +1,262 @@
+@charset "utf-8";
+// 导入的顺序
+// 因为我们可能在base中会修改样式
+@import 'normalize6.0.scss';
+// 再导入 自己的
+@import 'base.scss';
+// 定义变量 
+$lv-color:#d3079e;
+@function ptr($p) {
+    @return $p / 32+rem;
+}
+
+/*公共的头部*/
+
+img {
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    #header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: ptr(44);
+        z-index: 666;
+        background-color: #f7f7f7;
+        /*子代选择器 一般选择标签选择器会使用子代选择器  避免误杀到后面的标签*/
+        >h3 {
+            margin: 0;
+            line-height: ptr(44);
+            font-size: ptr(16);
+            color: #000;
+            text-align: center;
+        }
+        .user-icon {
+            display: block;
+            position: absolute;
+            right: ptr(4);
+            top: 50%;
+            margin-top: ptr(-10);
+            width: ptr(16);
+            >img {
+                width: 100%;
+            }
+        }
+        .place {
+            display: block;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            color: #d3079e;
+            font-size: ptr(14);
+            line-height: ptr(44);
+        }
+    }
+    #slide {
+        padding-top: ptr(44); // height: ptr(200);
+        // background-color: tomato;
+        .swiper-container {
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-slide {
+            margin: 0;
+            padding: 0; // background: #fff;
+            /* Center slide text vertically */
+            >a {
+                display: block;
+                >img {
+                    width: 100%;
+                }
+            }
+        }
+        .swiper-pagination {
+            bottom: 0;
+            .swiper-pagination-bullet {
+                width: 10px;
+                height: 10px;
+            }
+        }
+    }
+    #nav {
+        .row {
+            padding: 0;
+            margin: 0;
+            a {
+                padding: ptr(2);
+                display: block;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #label {
+        margin-top: ptr(4);
+        .row {
+            padding: 0;
+            margin: 0;
+            a {
+                display: block;
+                border: 1px solid #ccc;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #baby {
+        margin-top: ptr(15);
+        .row {
+            padding: 0;
+            margin: 0;
+            a {
+                display: block;
+                border: 1px solid #ccc;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #hot-activities {
+        background-color: #f1f1f1;
+        .hot-activities-title {
+            font-size: ptr(16);
+        }
+        .row {
+            padding: 0;
+            margin: 0;
+            a {
+                display: block;
+                border: 1px solid #ccc;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #Tabs {
+        position: relative;
+        height: 300%;
+        margin: 0;
+        padding: 0;
+        .Donkey-swiper-container {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                /* Center slide text vertically */
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding-top: ptr(70);
+                .row {
+                    padding: 0;
+                    margin: 0;
+                    >div {
+                        padding-bottom: ptr(10);
+                        border-bottom: 1px solid #555;
+                        margin-bottom: ptr(20);
+                        >a {
+                            display: block;
+                            >img {
+                                width: 100%;
+                            }
+                        }
+                        >p {
+                            text-align: left;
+                            line-height: ptr(40);
+                        }
+                        >h3 {
+                            text-align: left;
+                            font-size: ptr(18);
+                            line-height: ptr(25);
+                            margin-top: ptr(-10);
+                            color: #555;
+                        }
+                    }
+                }
+            }
+            .swiper-pagination {
+                top: 0;
+                .swiper-pagination-bullet {
+                    width: 1.5rem;
+                    margin: 0;
+                    margin-top: ptr(65);
+                    height: 1px;
+                    background-color: #d3079e;
+                    &:first-child {
+                        margin-right: ptr(110);
+                    }
+                }
+            }
+            .aside-tab {
+                margin-top: ptr(20);
+                position: absolute;
+                top: 0; // z-index: 55;
+                height: ptr(44);
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: #f7f7f7;
+                border-top: 1px solid #ccc;
+            }
+        }
+    }
+    #more {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        padding-top: ptr(10);
+        padding-bottom: ptr(10);
+        >a {
+            display: block;
+            height: ptr(22);
+            line-height: ptr(22);
+            width: 100%;
+            text-align: center;
+            background-color: #fff;
+            margin-bottom: ptr(22);
+        }
+    }
+    #footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: ptr(22);
+        background-color: $lv-color;
+        width: 100%;
+        line-height: ptr(22);
+        font-size: ptr(16);
+        border-bottom: 3px solid #fff;
+        z-index: 999;
+        >a {
+            color: #fff;
+            &:nth-child(2) {
+                padding-left: ptr(20);
+            }
+        }
+    }
+}

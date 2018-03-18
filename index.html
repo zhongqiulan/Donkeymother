@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <!-- ie让页面 按照edge这个版本 来渲染 主要针对的是ie浏览器  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 视口属性 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Donkeymother</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- 条件注释 小于 ie9 -->
+    <!--html5shiv html5 新语义标签-->
+    <!-- respond 媒体查询 在 ie8及以下 是不支持的  -->
+    <!-- 如果想要下载到本地 可以去  github-->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./dist/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- Demo styles -->
+</head>
+<script>
+    var screenw = window.screen.width;
+    document.querySelector('html').style.fontSize = screenw / 10 + "px";
+</script>
+
+<body>
+    <!-- 头部区域 -->
+    <header id="header">
+        <a href="javascript:void(0)" class="place">上海</a>
+        <h3>驴妈妈旅游网</h3>
+        <a href="javascript:void(0)" class="user-icon">
+            <img src="./images/icon/my.png" alt="">
+        </a>
+    </header>
+    <!-- 轮播图区域 -->
+    <section id="slide">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- .swiper-slide*7>a[href="javascript:void(0)"]>img[src="./images/img/banner$.jpg"] -->
+                <div class="swiper-slide">
+                    <a href="javascript:void(0)">
+                        <img src="./images/img/banner1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:void(0)">
+                        <img src="./images/img/banner2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:void(0)">
+                        <img src="./images/img/banner3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:void(0)">
+                        <img src="./images/img/banner4.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:void(0)">
+                        <img src="./images/img/banner5.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:void(0)">
+                        <img src="./images/img/banner6.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:void(0)">
+                        <img src="./images/img/banner7.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <nav id="nav">
+        <div class="row">
+            <!-- .col-xs-4*6>a[href="javascript:void(0)"]>img[src="./images/icon/nav$.png"] -->
+            <div class="col-xs-4 col-lg-2">
+                <a href="javascript:void(0)">
+                    <img src="./images/icon/nav1.png" alt="">
+                </a>
+            </div>
+            <div class="col-xs-4 col-lg-2">
+                <a href="javascript:void(0)">
+                    <img src="./images/icon/nav2.png" alt="">
+                </a>
+            </div>
+            <div class="col-xs-4 col-lg-2">
+                <a href="javascript:void(0)">
+                    <img src="./images/icon/nav3.png" alt="">
+                </a>
+            </div>
+            <div class="col-xs-4 col-lg-2">
+                <a href="javascript:void(0)">
+                    <img src="./images/icon/nav1.png" alt="">
+                </a>
+            </div>
+            <div class="col-xs-4 col-lg-2">
+                <a href="javascript:void(0)">
+                    <img src="./images/icon/nav2.png" alt="">
+                </a>
+            </div>
+            <div class="col-xs-4 col-lg-2">
+                <a href="javascript:void(0)">
+                    <img src="./images/icon/nav3.png" alt="">
+                </a>
+            </div>
+        </div>
+
+
+    </nav>
+    <section id="label">
+        <div class="row">
+            <!-- .col-xs-3*8>a[href="javascript:void(0)"]>img[src="./images/icon/j$.png"] -->
+            <div class="col-xs-3">
+                <a href="javascript:void(0)">
+                    <img src="./images/icon/j1.png" alt="">
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="javascript:void(0)">
+                    <img src="./images/icon/j2.png" alt="">
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="javascript:void(0)">
+                    <img src="./images/icon/j3.png" alt="">
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="javascript:void(0)">
+                    <img src="./images/icon/j4.png" alt="">
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="javascript:void(0)">
+                    <img src="./images/icon/j5.png" alt="">
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="javascript:void(0)">
+                    <img src="./images/icon/j6.png" alt="">
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="javascript:void(0)">
+                    <img src="./images/icon/j7.png" alt="">
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="javascript:void(0)">
+                    <img src="./images/icon/j8.png" alt="">
+                </a>
+            </div>
+
+        </div>
+
+
+    </section>
+    <section id="baby">
+        <div class="row">
+            <!-- .col-xs-3*8>a[href="javascript:void(0)"]>img[src="./images/icon/j$.png"] -->
+            <div class="col-xs-6">
+                <a href="javascript:void(0)">
+                    <img src="./images/img/t1.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-xs-6">
+                <div class="row">
+                    <!-- .col-xs-3*8>a[href="javascript:void(0)"]>img[src="./images/icon/j$.png"] -->
+                    <div class="col-xs-12">
+                        <a href="javascript:void(0)">
+                            <img src="./images/img/t2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-xs-12">
+                        <a href="javascript:void(0)">
+                            <img src="./images/img/t2.jpg" alt="">
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section id="hot-activities">
+        <h3 class="hot-activities-title">热门活动</h3>
+        <div class="row">
+            <!-- .col-xs-12*4>a[href="javascript:void(0)"]>img[src="./images/icon/r1$.jpg"] -->
+            <div class="col-xs-12">
+                <a href="javascript:void(0)">
+                    <img src="./images/img/r1.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-xs-12">
+                <a href="javascript:void(0)">
+                    <img src="./images/img/r2.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-xs-12">
+                <a href="javascript:void(0)">
+                    <img src="./images/img/r3.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-xs-12">
+                <a href="javascript:void(0)">
+                    <img src="./images/img/r4.jpg" alt="">
+                </a>
+            </div>
+
+
+
+        </div>
+    </section>
+    <section id="Tabs">
+        <!-- Swiper -->
+        <div class="Donkey-swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="row">
+
+                        <div class="col-xs-12">
+                            <a href="javascript:void(0)">
+                                <img src="./images/img/zm1.jpg" alt="">
+                            </a>
+                            <p>【热门活动】
+                                <span>驴妈妈温泉季</span>
+                            </p>
+                            <h3>听音乐，泡温泉，就找驴妈妈，听音乐，泡温泉，就找驴妈妈</h3>
+                        </div>
+                        <div class="col-xs-12">
+                            <a href="javascript:void(0)">
+                                <img src="./images/img/tj2.jpg" alt="">
+                            </a>
+                            <p>【热门活动】
+                                <span>驴妈妈温泉季</span>
+                            </p>
+                            <h3>听音乐，泡温泉，就找驴妈妈，听音乐，泡温泉，就找驴妈妈</h3>
+                        </div>
+                        <div class="col-xs-12">
+                            <a href="javascript:void(0)">
+                                <img src="./images/img/tj3.jpg" alt="">
+                            </a>
+                            <p>【热门活动】
+                                <span>驴妈妈温泉季</span>
+                            </p>
+                            <h3>听音乐，泡温泉，就找驴妈妈，听音乐，泡温泉，就找驴妈妈</h3>
+                        </div>
+                        <div class="col-xs-12">
+                            <a href="javascript:void(0)">
+                                <img src="./images/img/tj4.jpg" alt="">
+                            </a>
+                            <p>【热门活动】
+                                <span>驴妈妈温泉季</span>
+                            </p>
+                            <h3>听音乐，泡温泉，就找驴妈妈，听音乐，泡温泉，就找驴妈妈</h3>
+                        </div>
+                        <div class="col-xs-12">
+                            <a href="javascript:void(0)">
+                                <img src="./images/img/tj5.jpg" alt="">
+                            </a>
+                            <p>【热门活动】
+                                <span>驴妈妈温泉季</span>
+                            </p>
+                            <h3>听音乐，泡温泉，就找驴妈妈，听音乐，泡温泉，就找驴妈妈</h3>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <a href="javascript:void(0)">
+                                <img src="./images/img/tj5.jpg" alt="">
+                            </a>
+                            <p>【热门活动】
+                                <span>驴妈妈温泉季</span>
+                            </p>
+                            <h3>听音乐，泡温泉，就找驴妈妈，听音乐，泡温泉，就找驴妈妈</h3>
+                        </div>
+                        <div class="col-xs-12">
+                            <a href="javascript:void(0)">
+                                <img src="./images/img/tj4.jpg" alt="">
+                            </a>
+                            <p>【热门活动】
+                                <span>驴妈妈温泉季</span>
+                            </p>
+                            <h3>听音乐，泡温泉，就找驴妈妈，听音乐，泡温泉，就找驴妈妈</h3>
+                        </div>
+                        <div class="col-xs-12">
+                            <a href="javascript:void(0)">
+                                <img src="./images/img/tj3.jpg" alt="">
+                            </a>
+                            <p>【热门活动】
+                                <span>驴妈妈温泉季</span>
+                            </p>
+                            <h3>听音乐，泡温泉，就找驴妈妈，听音乐，泡温泉，就找驴妈妈</h3>
+                        </div>
+                        <div class="col-xs-12">
+                            <a href="javascript:void(0)">
+                                <img src="./images/img/tj2.jpg" alt="">
+                            </a>
+                            <p>【热门活动】
+                                <span>驴妈妈温泉季</span>
+                            </p>
+                            <h3>听音乐，泡温泉，就找驴妈妈，听音乐，泡温泉，就找驴妈妈</h3>
+                        </div>
+                        <div class="col-xs-12">
+                            <a href="javascript:void(0)">
+                                <img src="./images/img/tj1.jpg" alt="">
+                            </a>
+                            <p>【热门活动】
+                                <span>驴妈妈温泉季</span>
+                            </p>
+                            <h3>听音乐，泡温泉，就找驴妈妈，听音乐，泡温泉，就找驴妈妈</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <div class="aside-tab">
+                <span>度周末</span>
+                <span>度长假</span>
+            </div>
+        </div>
+    </section>
+    <section id="more">
+        <a href="javascript:void(0)">查看更多</a>
+    </section>
+    <footer id="footer">
+        <a href="javascript:void(0)"class="fl">免费注册</a>
+        <a href="javascript:void(0)">登录</a>
+        <a href="#" class="fr">TOP</a>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="lib/js/bootstrap.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="./dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        // 轮播图的效果
+        var swiper = new Swiper('.swiper-container', {
+            autoplay: true,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+        var Donkeyswiper = new Swiper('.Donkey-swiper-container', {
+            // effect: 'fade',
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+</body>
+
+</html>
